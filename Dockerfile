@@ -2,7 +2,7 @@ FROM python:3.10-slim-buster
 
 EXPOSE 8501
 
-RUN apt-get update && apt-get install -y --no-install-recommends \
+RUN apt-get update && apt-get install -y \
     build-essential \
     git \
     && rm -rf /var/lib/apt/lists/*
